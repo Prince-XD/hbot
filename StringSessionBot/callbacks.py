@@ -14,7 +14,11 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     if query.startswith("generate"):
     if query == "generate":
         await callback_query.message.reply(
-            "Please choose the python library you want to generate string session for",
+            """Welcome to Merissa Pyrogram/Telethon String Session Generator.
+
+You can procees with bot's api values if you want, else you can proceed with your api values 
+
+Press Button Below to Start Generating Session!""",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram Music-Bot", callback_data="pyrogram")],
                 [InlineKeyboardButton("Telethon User-Bot", callback_data="telethon")
