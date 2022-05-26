@@ -45,15 +45,7 @@ Press Button Below to Start Generating Session!""",
             await callback_query.message.reply(ERROR_MESSAGE.format(str(e)))
     elif query == "cbgenerate":
         await callback_query.message.reply(
-            """Welcome to Merissa Pyrogram/Telethon String Session Generator.
-
-
-You can procees with bot's api values if you want , else you can proceed with your api values
-
-Bot has over 100+ API ID and HASH Saved , You can use them. 
-
-
-Press Button Below to Start Generating Session!""",
+            """Press Button Below to Start Generating Session!""",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram Music-Bot", callback_data="cbpyrogram")],
                 [InlineKeyboardButton("Telethon User-Bot", callback_data="cbtelethon")
