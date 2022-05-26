@@ -40,9 +40,8 @@ Bot has over 100+ API ID and HASH Saved , You can use them.
 
 Press Button Below to Start Generating Session!""",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
-            InlineKeyboardButton("Telethon", callback_data="telethon")],
-            [InlineKeyboardButton("Using Bot's Apiid And Hash", callback_data="cbgenerate")
+            InlineKeyboardButton("🔗 Generate String With Your API", callback_data="generate")],
+            [InlineKeyboardButton("🔗 Generate String With Bot's API", callback_data="cbgenerate")
         ]])
     )
 
