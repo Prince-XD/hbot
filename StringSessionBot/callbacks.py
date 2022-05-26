@@ -14,19 +14,10 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     if query.startswith("generate"):
         if query == "generate":
             await callback_query.message.reply(
-            """Welcome to Merissa Pyrogram and Telethon String Session Generator.
-
-
-You can procees with bot's api values if you want , else you can proceed with your api values
-
-Bot has over 100+ API ID and HASH Saved , You can use them. 
-
-
-Press Button Below to Start Generating Session!""",
+            """Press Button Below to Start Generating Session Using Your API""",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
-                InlineKeyboardButton("Telethon", callback_data="telethon")],
-               [InlineKeyboardButton("Using Bot's Apiid And Hash", callback_data="cbgenerate")
+                InlineKeyboardButton("Telethon", callback_data="telethon")
             ]])
         )
     elif query in ["pyrogram", "telethon"]:
@@ -49,7 +40,7 @@ Press Button Below to Start Generating Session!""",
             await callback_query.message.reply(ERROR_MESSAGE.format(str(e)))
     elif query == "cbgenerate":
         await callback_query.message.reply(
-            """Press Button Below to Start Generating Session!""",
+            """Press Button Below to Start Generating Session Using Bot's API""",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram Music-Bot", callback_data="cbpyrogram")],
                 [InlineKeyboardButton("Telethon User-Bot", callback_data="cbtelethon")
