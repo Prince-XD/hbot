@@ -1,7 +1,7 @@
 from Data import Data
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-from StringSessionBot.generate import generate_session, ERROR_MESSAGE
+from StringSessionBot.generate import generate_session, ERROR_MESSAGE, withoutapigenerate
 
 
 # Callbacks
@@ -14,9 +14,13 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     if query.startswith("generate"):
         if query == "generate":
             await callback_query.message.reply(
-            """Welcome to Merissa Pyrogram/Telethon String Session Generator.
+            """Welcome to Merissa Pyrogram And Telethon String Session Generator.
 
-You can procees with bot's api values if you want, else you can proceed with your api values 
+
+You can procees with bot's api values if you want , else you can proceed with your api values
+
+Bot has over 100+ API ID and HASH Saved , You can use them. 
+
 
 Press Button Below to Start Generating Session!""",
             reply_markup=InlineKeyboardMarkup([[
