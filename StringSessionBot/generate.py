@@ -32,12 +32,17 @@ async def main(_, msg):
     await msg.reply(
         """Welcome to Merissa Pyrogram/Telethon String Session Generator.
 
-You can procees with bot's api values if you want, else you can proceed with your api values 
+
+You can procees with bot's api values if you want , else you can proceed with your api values
+
+Bot has over 100+ API ID and HASH Saved , You can use them. 
+
 
 Press Button Below to Start Generating Session!""",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Pyrogram Music-Bot", callback_data="pyrogram"),
-            InlineKeyboardButton("Telethon User-Bot", callback_data="telethon")
+            InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
+            InlineKeyboardButton("Telethon", callback_data="telethon")],
+            [InlineKeyboardButton("Using Bot's Apiid And Hash", callback_data="cbgenerate")
         ]])
     )
 
