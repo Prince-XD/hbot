@@ -22,7 +22,7 @@ Press Button Below to Start Generating Session!""",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
                 InlineKeyboardButton("Telethon", callback_data="telethon")],
-               [InlineKeyboardButton("Using Bot's Apiid And Hash", callback_data="cbgenerate")]
+               [InlineKeyboardButton("Using Bot's Apiid And Hash", callback_data="cbgenerate")
             ]])
         )
     elif query in ["pyrogram", "telethon"]:
