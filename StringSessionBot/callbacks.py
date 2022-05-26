@@ -13,7 +13,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.data.lower()
     if query.startswith("generate"):
         if query == "generate":
-        await callback_query.message.reply(
+            await callback_query.message.reply(
             """Welcome to Merissa Pyrogram/Telethon String Session Generator.
 
 You can procees with bot's api values if you want, else you can proceed with your api values 
