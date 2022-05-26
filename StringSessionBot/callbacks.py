@@ -12,7 +12,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     mention = user["mention"]
     query = callback_query.data.lower()
     if query.startswith("generate"):
-    if query == "generate":
+        if query == "generate":
         await callback_query.message.reply(
             """Welcome to Merissa Pyrogram/Telethon String Session Generator.
 
