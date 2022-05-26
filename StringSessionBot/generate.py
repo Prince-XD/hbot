@@ -30,7 +30,7 @@ ERROR_MESSAGE = "Oops! An exception occurred! \n\n**Error** : {} " \
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        """Welcome to Merissa Pyrogram/Telethon String Session Generator.
+        """Welcome to Merissa Pyrogram and Telethon String Session Generator.
 
 
 You can procees with bot's api values if you want , else you can proceed with your api values
