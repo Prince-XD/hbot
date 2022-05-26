@@ -30,13 +30,16 @@ ERROR_MESSAGE = "Oops! An exception occurred! \n\n**Error** : {} " \
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "Please choose the python library you want to generate string session for",
+        """Welcome to Merissa Pyrogram/Telethon String Session Generator.
+
+You can procees with bot's api values if you want, else you can proceed with your api values 
+
+Press Button Below to Start Generating Session!""",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
-            InlineKeyboardButton("Telethon", callback_data="telethon")
+            InlineKeyboardButton("Pyrogram Music-Bot", callback_data="pyrogram"),
+            InlineKeyboardButton("Telethon User-Bot", callback_data="telethon")
         ]])
     )
-
 
 async def generate_session(bot, msg, telethon=False):
     await msg.reply("Starting {} Session Generation...".format("Telethon" if telethon else "Pyrogram"))
